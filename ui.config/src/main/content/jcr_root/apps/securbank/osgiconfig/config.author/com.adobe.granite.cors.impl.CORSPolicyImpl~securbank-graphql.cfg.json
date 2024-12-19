@@ -1,10 +1,13 @@
 {
-  "alloworigin": [""],
-  "alloworiginregexp": ["https?://localhost.*"],
+  "alloworigin": [
+    "*"
+  ],
+  "alloworiginregexp": [],
   "allowedpaths": [
     "/graphql/execute.json.*",
     "/content/_cq_graphql/securbank/endpoint.json",
-    "/content/experience-fragments/.*"
+    "/content/experience-fragments/.*",
+    "/content/dam/.*"
   ],
   "supportedheaders": [
     "Origin",
@@ -15,8 +18,14 @@
     "Access-Control-Request-Headers",
     "Authorization"
   ],
-  "supportedmethods": ["GET", "HEAD", "POST"],
+  "supportedmethods": [
+    "GET",
+    "HEAD",
+    "POST"
+  ],
   "maxage:Integer": 1800,
   "supportscredentials": true,
-  "exposedheaders": [""]
+  "exposedheaders": [
+    ""
+  ]
 }
