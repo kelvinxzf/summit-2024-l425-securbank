@@ -2,7 +2,6 @@
   "alloworigin": [
     "*"
   ],
-  "alloworiginregexp": [],
   "allowedpaths": [
     "/graphql/execute.json.*",
     "/content/_cq_graphql/securbank/endpoint.json",
@@ -21,7 +20,8 @@
   "supportedmethods": [
     "GET",
     "HEAD",
-    "POST"
+    "POST",
+    "OPTIONS"
   ],
   "maxage:Integer": 1800,
   "supportscredentials": true,
